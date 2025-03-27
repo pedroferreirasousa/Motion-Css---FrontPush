@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(18, 19, 19);
+  color: #dedede;
+  font-family: "Winky Sans", sans-serif;
+}
+
+header {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 98vw;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+header h1 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  perspective: 100px;
+  display: flex;
+  align-items: center;
+}
+header h1 p:nth-child(1) {
+  color: rgb(21, 228, 243);
+  padding: 10px;
+  animation: looplogo 2s linear infinite;
+}
+header h1 p:nth-child(2) {
+  color: rgb(21, 228, 243);
+  padding: 10px;
+  animation: looplogo 2s linear reverse infinite;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+header a {
+  color: rgb(243, 243, 243);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+}
+header a:hover {
+  color: rgb(21, 228, 243);
+}
+
+.container {
+  width: 90%;
+  min-height: 92vh;
+  height: auto;
+  background-color: rgb(18, 19, 19);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  perspective: 150px;
+}
+.container .name-container {
+  letter-spacing: 4px;
+  padding-bottom: 40px;
+}
+.container h1 {
+  color: #b9cfd4;
+}
+.container p {
+  color: rgba(21, 228, 243, 0.39);
+  font-size: 16px;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px 24px;
+}
+
+.containerbox1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.paibox1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transform: rotate(0deg);
+  transform-origin: 0% 0%;
+  transition: all 1s ease;
+}
+.box:hover {
+  transform: rotate(90deg);
+}
+
+.containerbox2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.paibox2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box2:hover {
+  transform: translate(-50px, 0px);
+}
+
+.paibox3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.containerbox3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24PX;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box3:hover {
+  transform: translate(0px, -50px);
+}
+
+.containerbox4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24PX;
+}
+
+.paibox4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box4:hover {
+  transform: scale(0.6, 0.6);
+}
+
+.paibox5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.containerbox5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24PX;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box5:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.containerbox6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24PX;
+}
+
+.paibox6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box6:hover {
+  transform: rotate(45deg);
+}
+
+.containerbox7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24PX;
+}
+
+.paibox7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.box7 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box7:hover {
+  transform: skew(10deg, 20deg);
+}
+
+.containerbox8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24PX;
+}
+
+.paibox8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.box8 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box8:hover {
+  transform: skewX(20deg);
+}
+
+.containerbox9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24PX;
+}
+
+.paibox9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.box9 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box9:hover {
+  transform: skewY(-15deg);
+}
+
+.containerbox10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24PX;
+}
+
+.paibox10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 101, 101, 0.7607843137);
+  border-radius: 20px;
+}
+
+.box10 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 197, 197);
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.box10:hover {
+  transform: matrix(1, 0, 0, 1, -50, 50);
+}
+
+@keyframes looplogo {
+  0% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(5px);
+  }
+  66% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes rotatebox2 {
+  0% {
+    transform: rotateY(0deg), rotateX(60deg);
+  }
+  100% {
+    transform: rotateY(360deg), rotateX(60deg);
+  }
+}/*# sourceMappingURL=style2.css.map */
