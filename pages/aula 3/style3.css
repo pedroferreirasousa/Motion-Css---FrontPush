@@ -135,7 +135,7 @@ html body header .active {
   overflow: hidden;
 }
 .container-test-1 .content-1 .element-1 .wrapperbox-1 .box-1 {
-  animation-name: boxanimation;
+  animation-name: boxanimation1;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
@@ -143,8 +143,37 @@ html body header .active {
   animation-delay: 2;
   animation-timing-function: ease-in;
 }
+.container-test-1 .content-1 .element-2 .wrapperbox-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-test-1 .content-1 .element-2 .wrapperbox-2 .box-2 {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.container-test-1 .content-1 .element-2 .wrapperbox-2 .box-2 .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f0077b;
+  box-shadow: 0px 0px 10px 5px #dedede;
+}
+.container-test-1 .content-1 .element-2 .wrapperbox-2 .box-2 .dot:nth-child(1) {
+  animation: boxanimation2 0.4s linear 0.3s infinite alternate;
+}
+.container-test-1 .content-1 .element-2 .wrapperbox-2 .box-2 .dot:nth-child(2) {
+  animation: boxanimation2 0.4s linear 0.55s infinite alternate;
+}
+.container-test-1 .content-1 .element-2 .wrapperbox-2 .box-2 .dot:nth-child(3) {
+  animation: boxanimation2 0.4s linear 0.8s infinite alternate;
+}
 
-@keyframes boxanimation {
+@keyframes boxanimation1 {
   0% {
     width: 150px;
   }
@@ -158,5 +187,13 @@ html body header .active {
   }
   100% {
     width: 150px;
+  }
+}
+@keyframes boxanimation2 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
   }
 }/*# sourceMappingURL=style3.css.map */
