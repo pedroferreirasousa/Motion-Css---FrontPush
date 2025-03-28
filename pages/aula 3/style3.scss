@@ -1,0 +1,113 @@
+@import '../../css/variaveis';
+
+
+.container-test-geral {
+    width: 90%;
+    min-height: 92vh;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px auto 16px auto;
+
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 50px 24px;
+        width: 100%;
+
+        .element {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            width: 300px;
+            height: 350px;
+
+            h2 {
+                color: $white-light
+            }
+
+            p{
+                color: $blue-dark;
+            }
+
+            .wrapperbox {
+                width: 150px;
+                height: 150px;
+                border-radius: 16px;
+                background-color: $bg-box;
+
+                .box {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 16px;
+                    background-color: $blue-light;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+.container-test-1 {
+
+    .content-1 {
+        .element-1 {
+
+            .wrapperbox-1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                
+                .box-1 {
+                    
+                    animation-name: boxanimation;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: forwards;
+                    animation-direction: normal ;
+                    animation-delay: 2;
+                    animation-timing-function: ease-in;
+                    
+                }
+                
+                // &:hover {
+                    
+                //     .box-1 {
+                        
+                //     }
+                // }
+            }
+        }
+    }
+}
+
+
+
+@keyframes boxanimation {
+    
+    0% {
+        width: 150px;
+    }
+
+    50%{
+        width: 20px;
+        height: 20px;
+        background-color: $pink-light;
+        box-shadow: $blue-light;
+        box-shadow: 0px 0px 10px 5px $blue-light;
+        rotate: 180deg;
+    }
+
+    100% {
+        width: 150px;
+    }
+}
