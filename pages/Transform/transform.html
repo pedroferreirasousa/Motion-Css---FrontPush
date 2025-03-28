@@ -12,12 +12,12 @@
     <header>
         <h1>
             <p>
-                <</p>Pedro Ferreira<p>/></p>
+                << /p>Pedro Ferreira<p>/></p>
         </h1>
         <nav>
             <ul>
                 <li><a href="../../index.html">Home</a></li>
-                <li><a style="color: rgb(21, 228, 243)" href="/pages/aula 2/aula2.html">Transform</a></li>
+                <li><a class="active" href="/pages/aula 2/aula2.html">Transform</a></li>
                 <li><a href="#">Aula 3</a></li>
                 <li><a href="#">Aula 4</a></li>
                 <li><a href="#">Aula 5</a></li>
@@ -27,110 +27,156 @@
         <a href="/pages/testes/testes.html">Testes</a>
     </header>
 
-    <section class="container">
-        <h1 class="name-container">Trasform 2D</h1>
-        <div class="grid1">
-            <div class="containerbox1">
-                <h1>Destacamento Lateral</h1>
-                <div class="paibox1">
-                    <div class="box"></div>
+    <section class="container-test-geral container-test-1">
+        <h1>Transform 2D</h1>
+
+        <div class="content content-1">
+
+            <div class="element element-1">
+                <h2>Destacamento Lateral</h2>
+                <div class="wrapperbox wrapperbox-1">
+                    <div class="box box-1"></div>
                 </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span>transform: rotate(90deg)</span>
+                <span>transform-origin: 0% 0% <br>
+                    transform: rotate(90deg)</span>
             </div>
 
-            <div class="containerbox2">
-                <h1>Deslocamento Lateral</h1>
-                <div class="paibox2">
-                    <div class="box2"></div>
+            <div class="element element-2">
+                <h2>Deslocamento Lateral</h2>
+                <div class="wrapperbox wrapperbox-2">
+                    <div class="box box-2"></div>
                 </div>
                 <p>// passe o mouse para ver a animação</p>
                 <span>transform: translate(-50px, 0px)</span>
             </div>
 
-            <div class="containerbox3">
-                <h1>Deslocamento Vertical</h1>
-                <div class="paibox3">
-                    <div class="box3"></div>
+            <div class="element element-3">
+                <h2>Deslocamento Vertical</h2>
+                <div class="wrapperbox wrapperbox-3">
+                    <div class="box box-3"></div>
                 </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span>transform: translate(0px, -50px)</span>
-
+                <span>transform: translate(0, -50px)</span>
             </div>
 
-            <div class="containerbox4">
-                <h1>Scale - Menor</h1>
-                <div class="paibox4">
-                    <div class="box4"></div>
+            <div class="element element-4">
+                <h2>Scale - Menor</h2>
+                <div class="wrapperbox wrapperbox-4">
+                    <div class="box box-4"></div>
                 </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span>transform: scale(0.6, 0.6)</span>
+                <span>transform: scale(0.8)</span>
             </div>
 
-            <div class="containerbox5">
-                <h1>Scale - Maior</h1>
-                <div class="paibox5">
-                    <div class="box5"></div>
+            <div class="element element-5">
+                <h2>Scale - Maior</h2>
+                <div class="wrapperbox wrapperbox-5">
+                    <div class="box box-5"></div>
                 </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span>transform: scale(1.2, 1.2)</span>
+                <span>transform: scale(1.2)</span>
             </div>
 
-            <div class="containerbox6">
-                <h1>Rotação</h1>
-                <div class="paibox6">
-                    <div class="box6"></div>
+            <div class="element element-6">
+                <h2>Rotação</h2>
+                <div class="wrapperbox wrapperbox-6">
+                    <div class="box box-6"></div>
                 </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span>transform: rotate(45deg)</span>
+                <span>transform: rotate(-50deg)</span>
             </div>
 
-
-            <div class="containerbox7">
-                <h1>Skew</h1>
-                <div class="paibox7">
-                    <div class="box7"></div>
+            <div class="element element-7">
+                <h2>Skew</h2>
+                <div class="wrapperbox wrapperbox-7">
+                    <div class="box box-7"></div>
                 </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span> transform: Skew(10deg, 20deg)</span>
+                <span>transform: skew(20deg, 10deg)</span>
             </div>
 
-
-            <div class="containerbox8">
-                <h1>SkewX</h1>
-                <div class="paibox8">
-                    <div class="box8"></div>
+            <div class="element element-8">
+                <h2>SkewX</h2>
+                <div class="wrapperbox wrapperbox-8">
+                    <div class="box box-8"></div>
                 </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span>SkewX(20deg)</span>
+                <span>transform: skewX(20deg)</span>
             </div>
 
-
-            <div class="containerbox9">
-                <h1>SkewY</h1>
-                <div class="paibox9"><div class="box9"></div></div>
+            <div class="element element-9">
+                <h2>SkewY</h2>
+                <div class="wrapperbox wrapperbox-9">
+                    <div class="box box-9"></div>
+                </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span>SkewY(-15deg)</span>
+                <span>transform: skewY(20deg)</span>
             </div>
 
-
-            <div class="containerbox10">
-                <h1>Matrix</h1>
-                <div class="paibox10"><div class="box10"></div></div>
+            <div class="element element-10">
+                <h2>Matrix</h2>
+                <div class="wrapperbox wrapperbox-10">
+                    <div class="box box-10"></div>
+                </div>
                 <p>// passe o mouse para ver a animação</p>
-                <span>transform: matrix(1, 0, 0, 1, -50, 50,)</span>
+                <span>transform: matrix(1, 0, 0, 1, -50, -50)</span>
             </div>
-
-
-
-
 
         </div>
-    </section>
-
-    <section>
 
     </section>
+
+    <section class="container-test-geral container-test-2">
+        <h1>Transform 3D</h1>
+        <div class="content content-2">
+
+            <div class="element element-1">
+                <h2>Translate3D</h2>
+                <div class="wrapperbox wrapperbox-1">
+                    <div class="box box-1"></div>
+                </div>
+                <p>// passe o mouse para ver a animação</p>
+                <span>transform: translate3d(-80px, 20px , 250px)</span>
+            </div>
+
+            <div class="element element-2">
+                <h2>Scale3D</h2>
+                <div class="wrapperbox wrapperbox-2">
+                    <div class="box box-2"></div>
+                </div>
+                <p>// passe o mouse para ver a animação</p>
+                <span>transform: scale3d(1.5, 0.5, 1.0)</span>
+            </div>
+
+            <div class="element element-3">
+                <h2>Scale3D</h2>
+                <div class="wrapperbox wrapperbox-3">
+                    <div class="box box-3"></div>
+                </div>
+                <p>// passe o mouse para ver a animação</p>
+                <span>transform: rotate3d(1,1,0,60deg)</span>
+            </div>
+
+            <div class="element element-4">
+                <h2>Perspective3D</h2>
+                <div class="wrapperbox wrapperbox-4">
+                    <div class="box box-4"></div>
+                </div>
+                <p>// passe o mouse para ver a animação</p>
+                <span>transform: rotate3d(1,1,0,60deg)</span>
+            </div>
+
+            <div class="element element-5">
+                <h2>Matrix3D</h2>
+                <div class="wrapperbox wrapperbox-5">
+                    <div class="box box-5"><p>Card <br> Animação</p></div>
+                </div>
+                <p>// passe o mouse para ver a animação</p>
+                <span>animation: matrixAnimation 2s linear alternate infinite <br>
+                    transform: matrix3D(1, 0, 0, 0, 0, 1, -1, 0, 1, 0, -1, 0, -100, 0, 100, 1)
+                </span>
+            </div>
 </body>
 
 </html>
